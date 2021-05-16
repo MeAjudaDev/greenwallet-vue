@@ -2,8 +2,8 @@
   <header>
     <div id="header">
       <div id="btn-avatar">
-        <div id="btn"></div>
-        <div id="avatar"></div>
+          <img src="./assets/menu-mobile.svg" id="menu-mobile"/>
+          <button id="avatar"></button>
       </div>
       <h2>Configurações</h2>
     </div>
@@ -47,6 +47,21 @@ body {
   display: flex;  
   width: 100%;
   height: 2rem;    
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-mobile {
+  width: 1.8rem;
+}
+
+#avatar {
+  width: 2.2rem; 
+  height: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  background: url('./assets/teste.png');
+  background-size: cover;
 }
 
 h2 {
