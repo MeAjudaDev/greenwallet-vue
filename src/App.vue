@@ -3,7 +3,7 @@
     <div id="header">
       <div id="btn-avatar">
           <img src="./assets/menu-mobile.svg" id="menu-mobile"/>
-          <button id="avatar"></button>
+          <img class="avatar" src="./assets/teste.png" alt="avatar">          
       </div>
       <h2>Configurações</h2>
     </div>
@@ -16,18 +16,43 @@
         <li class="menu-options-list-item">Despesas</li>
       </ul>
     </nav>
-    <section id="share">
+    <section class="share">
       <h3 class="section-title">COMPARTILHAR CONTA</h3>
       <p class="section-phrase">Compartilhe o gerenciamento das despesas e receitas com a sua família</p>
       <div class="share-container">
         <label for="input-share-account">E-mail</label>
         <input id="input-share-account" type="email">
         <button id="share-account" >+</button>
-      </div>
-      
+      </div>      
     </section>
-    
+    <section class="share">
+      <h3 class="section-title">FAMÍLIA 
+        <button id="btn-config" type="button">
+          <img src="./assets/btn-config.svg" alt="">
+        </button>               
+      </h3>
+      <div class="family-member">        
+        <img class="avatar member-avatar" src="./assets/teste.png" alt="avatar">
+        <div class="name-and-status">
+          <p class="member-name">Fulana da Silva Sauro</p>
+          <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
+          <p class="member-type">Principal</p>
+        </div>        
+      </div>
+      <div class="family-member">        
+        <img class="avatar member-avatar" src="./assets/teste.png" alt="avatar">
+        <div class="name-and-status">
+          <p class="member-name">Fulana da Silva Sauro</p>
+          <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
+          <p class="member-type">Principal</p>
+        </div>        
+      </div>
+    </section>  
   </main>
+  <footer>
+    <button class="btn-save" type="button">Salvar</button>
+    <button class="btn-return" type="button">Voltar</button>
+  </footer>
 </template>
 
 <script>
@@ -75,12 +100,11 @@ body {
   width: 1.8rem;
 }
 
-#avatar {
+.avatar {
   width: 2.2rem; 
   height: 2.2rem;
   border-radius: 50%;
-  border: none;
-  background: url('./assets/teste.png');
+  border: none;  
   background-size: cover;
 }
 
@@ -108,18 +132,22 @@ h2 {
   font-weight: bold;
 }
 
-#share{
+.share{
   padding: 1rem;
 }
 
 .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #9B9FAA;
   border-bottom: solid 2px #9B9FAA;
   padding-bottom: .4rem;
+  margin-bottom: .75rem;
 }
 
 .section-phrase{
-  padding: .75rem 0;
+  padding-bottom: .75rem;
 }
 
 .share-container{
@@ -151,6 +179,53 @@ label{
   font-size: 1.25rem;
   margin-left: .3rem;
   padding: .95rem 1.45rem;
+}
+
+#btn-config {  
+  background: none;
+  border: none;
+}
+
+.family-member{
+  display: flex;
+  line-height: 1.1rem;
+  margin-bottom: .8rem;   
+}
+
+.name-and-status{
+  margin-left: .8rem;
+}
+
+.member-status{
+  color: #9B9FAA;
+  font-size: 0.7rem;
+}
+
+.member-type {
+  font-size: 0.7rem;
+  color: #01C9B8;
+}
+
+footer{
+  padding: 1rem;
+}
+
+.btn-save, .btn-return{
+  margin: .2rem 0;
+  width: 100%;
+  padding: .6rem 0;  
+}
+
+.btn-save{
+  border: 1px solid #01C9B8;
+  background-color: #01C9B8;
+  color: #FFF;
+}
+
+.btn-return{
+  background-color: #FFFFFF;
+  color: #01C9B8;
+  border: 1px solid #01C9B8;
 }
 
 </style>
