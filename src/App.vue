@@ -16,6 +16,16 @@
         <li class="menu-options-list-item">Despesas</li>
       </ul>
     </nav>
+    <div class="container-user">
+      <div class="container-img">
+        <img class="avatar avatar-config" src="./assets/teste.png">
+      
+      </div>
+      <div class="container-name-email">
+        <p id="name">Fulano de Tal</p>
+        <p id="email" >meuemail@gmail.com</p>
+      </div>
+    </div>
     <section class="share">
       <h3 class="section-title">COMPARTILHAR CONTA</h3>
       <p class="section-phrase">Compartilhe o gerenciamento das despesas e receitas com a sua família</p>
@@ -132,6 +142,26 @@ h2 {
   font-weight: bold;
 }
 
+.container-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-config{
+  width: 5rem;
+  height: 5rem;
+  margin-right: .8rem;
+}
+#name{
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+
+}
+#email{
+  font-size:.75rem;
+  color: #9B9FAA;
+}
+
 .share{
   padding: 1rem;
 }
@@ -227,5 +257,7 @@ footer{
   color: #01C9B8;
   border: 1px solid #01C9B8;
 }
+
+
 
 </style>
