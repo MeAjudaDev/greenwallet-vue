@@ -2,8 +2,8 @@
   <header>
     <div id="header">
       <div id="btn-avatar">
-          <img src="./assets/menu-mobile.svg" id="menu-mobile"/>
-          <img class="avatar" src="./assets/teste.png" alt="avatar">          
+        <Menu />
+        <Avatar />
       </div>
       <h2>Configurações</h2>
     </div>
@@ -18,8 +18,7 @@
     </nav>
     <div class="container-user">
       <div class="container-img">
-        <img class="avatar avatar-config" src="./assets/teste.png">
-      
+        <Avatar />  
       </div>
       <div class="container-name-email">
         <p id="name">Fulano de Tal</p>
@@ -42,7 +41,7 @@
         </button>               
       </h3>
       <div class="family-member">        
-        <img class="avatar member-avatar" src="./assets/teste.png" alt="avatar">
+        <Avatar />
         <div class="name-and-status">
           <p class="member-name">Fulana da Silva Sauro</p>
           <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
@@ -50,7 +49,7 @@
         </div>        
       </div>
       <div class="family-member">        
-        <img class="avatar member-avatar" src="./assets/teste.png" alt="avatar">
+        <Avatar />
         <div class="name-and-status">
           <p class="member-name">Fulana da Silva Sauro</p>
           <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
@@ -66,10 +65,14 @@
 </template>
 
 <script>
+  import Menu from './components/Menu.vue';
+  import Avatar from './components/Avatar.vue';
+
 export default {
   name: 'App',
   components: {
-
+      Menu,
+      Avatar
   }
 }
 </script>
@@ -100,22 +103,10 @@ body {
 
 #btn-avatar {  
   display: flex;  
-  width: 100%;
+  /* width: 100%; */
   height: 2rem;    
   justify-content: space-between;
   align-items: center;
-}
-
-#menu-mobile {
-  width: 1.8rem;
-}
-
-.avatar {
-  width: 2.2rem; 
-  height: 2.2rem;
-  border-radius: 50%;
-  border: none;  
-  background-size: cover;
 }
 
 h2 {
