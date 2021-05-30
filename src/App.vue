@@ -9,13 +9,7 @@
     </div>
   </header>
   <main>
-    <nav id="menu-options">
-      <ul id="menu-options-list">
-        <li class="menu-options-list-item active">Usuário</li>
-        <li class="menu-options-list-item">Receitas</li>
-        <li class="menu-options-list-item">Despesas</li>
-      </ul>
-    </nav>
+    <NavOptions />
     <div class="container-user">
       <div class="container-img">
         <Avatar />  
@@ -25,15 +19,7 @@
         <p id="email" >meuemail@gmail.com</p>
       </div>
     </div>
-    <section class="share">
-      <h3 class="section-title">COMPARTILHAR CONTA</h3>
-      <p class="section-phrase">Compartilhe o gerenciamento das despesas e receitas com a sua família</p>
-      <div class="share-container">
-        <label for="input-share-account">E-mail</label>
-        <input id="input-share-account" type="email">
-        <button id="share-account" >+</button>
-      </div>      
-    </section>
+    <Section/>
     <section class="share">
       <h3 class="section-title">FAMÍLIA 
         <button id="btn-config" type="button">
@@ -67,12 +53,17 @@
 <script>
   import Menu from './components/Menu.vue';
   import Avatar from './components/Avatar.vue';
+  import NavOptions from './components/NavOptions.vue';
+  import Section from './components/Section.vue';
 
 export default {
   name: 'App',
   components: {
       Menu,
-      Avatar
+      Avatar,
+      NavOptions,
+      Section,
+     
   }
 }
 </script>
@@ -116,22 +107,7 @@ h2 {
   color: #FFFFFF;   
 }
 
-#menu-options-list{
-  display: flex;
-  justify-content: center;
-  list-style-type:none;
-}
 
-.menu-options-list-item{
-  font-size: 1.1rem;
-  margin:0;
-  padding: 1.5rem;
-}
-
-.active{
-  color:#01C9B8;
-  font-weight: bold;
-}
 
 .container-user{
   display: flex;
