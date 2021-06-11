@@ -28,19 +28,11 @@
       </h3>
       <div class="family-member">        
         <Avatar />
-        <div class="name-and-status">
-          <p class="member-name">Fulana da Silva Sauro</p>
-          <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
-          <p class="member-type">Principal</p>
-        </div>        
+        <FamilyMember /> 
       </div>
       <div class="family-member">        
         <Avatar />
-        <div class="name-and-status">
-          <p class="member-name">Fulana da Silva Sauro</p>
-          <p class="member-status">último acesso em 27/04/2021 às 14:19</p>
-          <p class="member-type">Principal</p>
-        </div>        
+        <FamilyMember /> 
       </div>
     </section>  
   </main>
@@ -55,6 +47,7 @@
   import Avatar from './components/Avatar.vue';
   import NavOptions from './components/NavOptions.vue';
   import Section from './components/Section.vue';
+  import FamilyMember from './components/FamilyMember.vue';
 
 export default {
   name: 'App',
@@ -63,7 +56,7 @@ export default {
       Avatar,
       NavOptions,
       Section,
-     
+      FamilyMember,
   }
 }
 </script>
@@ -106,8 +99,6 @@ h2 {
   font-size: 25px;
   color: #FFFFFF;   
 }
-
-
 
 .container-user{
   display: flex;
@@ -187,20 +178,6 @@ label{
   display: flex;
   line-height: 1.1rem;
   margin-bottom: .8rem;   
-}
-
-.name-and-status{
-  margin-left: .8rem;
-}
-
-.member-status{
-  color: #9B9FAA;
-  font-size: 0.7rem;
-}
-
-.member-type {
-  font-size: 0.7rem;
-  color: #01C9B8;
 }
 
 footer{
