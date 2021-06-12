@@ -20,21 +20,7 @@
       </div>
     </div>
     <Section/>
-    <section class="share">
-      <h3 class="section-title">FAMÍLIA 
-        <button id="btn-config" type="button">
-          <img src="./assets/btn-config.svg" alt="">
-        </button>               
-      </h3>
-      <div class="family-member">        
-        <Avatar />
-        <FamilyMember /> 
-      </div>
-      <div class="family-member">        
-        <Avatar />
-        <FamilyMember /> 
-      </div>
-    </section>  
+    <FamilySection />  
   </main>
   <footer>
     <button class="btn-save" type="button">Salvar</button>
@@ -47,7 +33,7 @@
   import Avatar from './components/Avatar.vue';
   import NavOptions from './components/NavOptions.vue';
   import Section from './components/Section.vue';
-  import FamilyMember from './components/FamilyMember.vue';
+  import FamilySection from './components/FamilySection.vue';
 
 export default {
   name: 'App',
@@ -56,7 +42,7 @@ export default {
       Avatar,
       NavOptions,
       Section,
-      FamilyMember,
+      FamilySection,
   }
 }
 </script>
