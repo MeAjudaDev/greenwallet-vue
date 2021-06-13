@@ -19,7 +19,7 @@
         <p id="email" >meuemail@gmail.com</p>
       </div>
     </div>
-    <Section/>
+    <ShareSection/>
     <FamilySection />  
   </main>
   <footer>
@@ -32,7 +32,7 @@
   import Menu from './components/Menu.vue';
   import Avatar from './components/Avatar.vue';
   import NavOptions from './components/NavOptions.vue';
-  import Section from './components/Section.vue';
+  import ShareSection from './components/ShareSection.vue';
   import FamilySection from './components/FamilySection.vue';
 
 export default {
@@ -41,7 +41,7 @@ export default {
       Menu,
       Avatar,
       NavOptions,
-      Section,
+      ShareSection,
       FamilySection,
   }
 }

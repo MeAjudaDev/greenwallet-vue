@@ -13,7 +13,7 @@
 import ShareContainer from './ShareContainer.vue'
 
 export default {
-    name: 'Section',
+    name: 'ShareSection',
     components:{
         ShareContainer
         }
