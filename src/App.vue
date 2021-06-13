@@ -21,11 +21,8 @@
     </div>
     <ShareSection/>
     <FamilySection />  
+    <Footer />
   </main>
-  <footer>
-    <button class="btn-save" type="button">Salvar</button>
-    <button class="btn-return" type="button">Voltar</button>
-  </footer>
 </template>
 
 <script>
@@ -34,6 +31,7 @@
   import NavOptions from './components/NavOptions.vue';
   import ShareSection from './components/ShareSection.vue';
   import FamilySection from './components/FamilySection.vue';
+  import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -43,6 +41,7 @@ export default {
       NavOptions,
       ShareSection,
       FamilySection,
+      Footer
   }
 }
 </script>
@@ -170,23 +169,6 @@ footer{
   padding: 1rem;
 }
 
-.btn-save, .btn-return{
-  margin: .2rem 0;
-  width: 100%;
-  padding: .6rem 0;  
-}
-
-.btn-save{
-  border: 1px solid #01C9B8;
-  background-color: #01C9B8;
-  color: #FFF;
-}
-
-.btn-return{
-  background-color: #FFFFFF;
-  color: #01C9B8;
-  border: 1px solid #01C9B8;
-}
 
 
 
