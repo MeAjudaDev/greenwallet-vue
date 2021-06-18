@@ -1,30 +1,24 @@
 <template>
     <footer>
-        <SaveButton />
-        <BackButton />
+        <Button type= "button" mode= "save" tag= "Salvar"/>
+        <Button type= "button" mode= "return" tag= "Voltar"/>
     </footer>
 </template>
 
 <script>
 
-import SaveButton from './SaveButton.vue'
-import BackButton from './BackButton.vue'
+import Button from './FooterButton.vue'
 
 export default {
     name: 'Footer',
     components:{
-        SaveButton,
-        BackButton
+        Button
     }
 }
 </script>
 
 <style>
     
-.btn-save, .btn-return{
-  margin: .2rem 0;
-  width: 100%;
-  padding: .6rem 0;  
-}
+
 
 </style>
