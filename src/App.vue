@@ -9,16 +9,8 @@
     </div>
   </header>
   <main>
-    <NavOptions />
-    <div class="container-user">
-      <div class="container-img">
-        <Avatar />  
-      </div>
-      <div class="container-name-email">
-        <p id="name">Fulano de Tal</p>
-        <p id="email" >meuemail@gmail.com</p>
-      </div>
-    </div>
+    <NavOptions />   
+    <UserSection />
     <ShareSection/>
     <FamilySection />  
     <Footer />
@@ -29,9 +21,10 @@
   import Menu from './components/Menu.vue';
   import Avatar from './components/Avatar.vue';
   import NavOptions from './components/NavOptions.vue';
+  import UserSection from './components/UserSection.vue';
   import ShareSection from './components/ShareSection.vue';
   import FamilySection from './components/FamilySection.vue';
-  import Footer from './components/Footer.vue';
+  import Footer from './components/Footer.vue';  
 
 export default {
   name: 'App',
@@ -39,9 +32,10 @@ export default {
       Menu,
       Avatar,
       NavOptions,
+      UserSection,
       ShareSection,
       FamilySection,
-      Footer
+      Footer,      
   }
 }
 </script>
@@ -85,24 +79,10 @@ h2 {
   color: #FFFFFF;   
 }
 
-.container-user{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .avatar-config{
   width: 5rem;
   height: 5rem;
   margin-right: .8rem;
-}
-#name{
-  font-size: 1rem;
-  margin-bottom: 0.35rem;
-
-}
-#email{
-  font-size:.75rem;
-  color: #9B9FAA;
 }
 
 .share{
@@ -116,7 +96,7 @@ h2 {
   color: #9B9FAA;
   border-bottom: solid 2px #9B9FAA;
   padding-bottom: .4rem;
-  margin-bottom: .75rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-phrase{
@@ -168,8 +148,5 @@ label{
 footer{
   padding: 1rem;
 }
-
-
-
 
 </style>
